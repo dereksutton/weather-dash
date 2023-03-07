@@ -24,12 +24,18 @@ section {
     padding: 0.5em 0 0.5em 0.5em;
 }
 
+.search-field {
+    padding: 1em;
+}
+
 .city-search-list {
     margin-top: 1%;
 }
 
 .location-name {
     width: 75%;
+    padding: 1em;
+    margin: auto;
 }
 
 .conditions-board {
