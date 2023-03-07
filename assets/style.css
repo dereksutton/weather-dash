@@ -1,0 +1,120 @@
+/* main document styles */
+
+body {
+    margin: 1%;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    margin-top: 3%;
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+}
+
+.search-board {
+    width: 20%;
+    background-color: #d9d9d9;
+    margin: 0 1em 1em 1em;
+    padding: 0.5em 0 0.5em 0.5em;
+}
+
+.city-search-list {
+    margin-top: 1%;
+}
+
+.location-name {
+    width: 75%;
+}
+
+.conditions-board {
+    width: 80%;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: ;
+}
+
+.conditions-now {
+    border: 1px solid darkslategray;
+    padding: 0 0.5em;
+}
+
+.city-details,
+.uv-board {
+    display: flex;
+    align-items: center;
+}
+
+#uv-now {
+    margin: 0.25em;
+    padding: 0.25em;
+}
+
+.forecast-board {
+    padding-top: 2em;
+}
+
+.days-container {
+    display: inline;
+}
+
+.card-id {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.card-info {
+    background-color: #d9d9d9;
+}
+
+.card-id,
+.card-info {
+    text-align: center;
+}
+
+/* Dynamically added classes */
+.calm {
+    background-color: palegreen;
+    color: #fff;
+}
+
+.choppy {
+    background-color: palegoldenrod;
+    color: #000;
+}
+
+.extreme {
+    background-color: #ff000f;
+    color: #fff;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 575px) {
+    .search-board {
+        width: 40%;
+    }
+
+    .search-icon-button {
+        margin: 0;
+    }
+
+    .search-board h3 {
+        font-size: 1.25em;
+    }
+
+    .form-row {
+        display: block;
+        text-align: center;
+    }
+
+    .conditions-board {
+        width: 60%;
+    }
+}
