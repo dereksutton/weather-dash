@@ -49,10 +49,10 @@ function cityFinder() {
 
 function weatherCurrent(data) {
 
-    $("#iconNow").src = "http://openweathermap.org/img/wn/" + data.current.weather[0].icon;
+    $("#iconNow").src = "http://openweathermap.org/img/wn/" + data.weather[0].icon;
     $("#temp-now").textContent = "Current Temp: " + data.main.temp.toFixed(1) + " \u2109";
     $("#humid-now").textContent = "Humidity: " + data.main.humidity + "%";
-    $("#wind-now").textContent = "Wind Speed: " + data.current.wind_speed.toFixed(1) + " MPH";
+    $("#wind-now").textContent = "Wind Speed: " + data.wind.speed.toFixed(1) + " MPH";
     $("#uv-now").textContent = "  " + data.current.uvi;
 
     if (data.current.uvi < 3) {
@@ -80,7 +80,7 @@ function weatherFuture(data) {
 
         var nowSelect = "#day-" + i;
         $(nowSelect)[0].textContent = estWeatherFuture.date;
-        nowSelect = "#img-" + i;
+        nowSelect = "#icon-" + i;
         $(nowSelect)[0].src = estWeatherFuture.icon;
         nowSelect = "#temp-" + i;
         $(nowSelect)[0].textContent = "Current Temp: " + estWeatherFuture.temp + " \u2109";
