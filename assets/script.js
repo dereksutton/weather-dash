@@ -48,8 +48,9 @@ function cityFinder() {
 // This function appends the current data from the OpenWeather API to their pre-determined positions in the document
 
 function weatherCurrent(data) {
+    $(".conditions-board").addClass("visible");
 
-    $("#iconNow").src = "http://openweathermap.org/img/wn/" + data.weather[0].icon;
+    $("#icon-now").attr("src", "http://openweathermap.org/img/wn/" + data.weather[0].icon);
     $("#temp-now").textContent = "Current Temp: " + data.main.temp.toFixed(1) + " \u2109";
     $("#humid-now").textContent = "Humidity: " + data.main.humidity + "%";
     $("#wind-now").textContent = "Wind Speed: " + data.wind.speed.toFixed(1) + " MPH";
